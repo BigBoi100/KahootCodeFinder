@@ -3,7 +3,16 @@ Type "help", "copyright", "credits" or "license()" for more information.
 import requests
 import random
 
+print('Welcome to the kahoot hacker!! ')
+print('I am not responsible for any damage or trouble you get after using this')
+
+
 digits = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+print('															
+      
+      					FINDING KAHOOT CODES... PLEASE WAIT!!
+      ')
+
 
 def is_code_valid(code):
   request = requests.get("https://kahoot.it/reserve/session/" + code)
@@ -18,3 +27,4 @@ while True:
 		with open("games.txt", "a") as file:
 			file.write(code + "\n")
 		print(code)
+      
